@@ -33,6 +33,25 @@ class Album
      * @Assert\NotBlank
      */
     private $email;
+    
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $token;
+    
+    private function generateRandomString($length = 20) {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+        return $randomString;
+    }
+    
+    public function __construct() {
+        $this->token = $this->generateRandomString();
+    }
 
     /**
      * Get id
@@ -114,5 +133,29 @@ class Album
     public function getDescription()
     {
         return $this->description;
+    }
+
+    /**
+     * Set token
+     *
+     * @param string $token
+     *
+     * @return Album
+     */
+    public function setToken($token)
+    {
+        $this->token = $token;
+
+        return $this;
+    }
+
+    /**
+     * Get token
+     *
+     * @return string
+     */
+    public function getToken()
+    {
+        return $this->token;
     }
 }
