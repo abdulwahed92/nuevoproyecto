@@ -1,0 +1,15 @@
+[19-Sep-2016 09:53:27 UTC] PHP Fatal error:  Class 'Doctrine\DBAL\Configuration' not found in /home/ubuntu/workspace/dev2/vendor/doctrine/orm/lib/Doctrine/ORM/Configuration.php on line 54
+[19-Sep-2016 09:53:27 UTC] PHP Stack trace:
+[19-Sep-2016 09:53:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/dev2/web/app_dev.php:0
+[19-Sep-2016 09:53:27 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/dev2/web/app_dev.php:32
+[19-Sep-2016 09:53:27 UTC] PHP   3. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/dev2/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:166
+[19-Sep-2016 09:53:27 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->initializeContainer() /home/ubuntu/workspace/dev2/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:117
+[19-Sep-2016 09:53:27 UTC] PHP   5. Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerAggregate->warmUp() /home/ubuntu/workspace/dev2/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:489
+[19-Sep-2016 09:53:27 UTC] PHP   6. Symfony\Bridge\Doctrine\CacheWarmer\ProxyCacheWarmer->warmUp() /home/ubuntu/workspace/dev2/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/CacheWarmer/CacheWarmerAggregate.php:48
+[19-Sep-2016 09:53:27 UTC] PHP   7. Doctrine\Common\Persistence\AbstractManagerRegistry->getManagers() /home/ubuntu/workspace/dev2/vendor/symfony/symfony/src/Symfony/Bridge/Doctrine/CacheWarmer/ProxyCacheWarmer.php:54
+[19-Sep-2016 09:53:27 UTC] PHP   8. Symfony\Bridge\Doctrine\ManagerRegistry->getService() /home/ubuntu/workspace/dev2/vendor/doctrine/common/lib/Doctrine/Common/Persistence/AbstractManagerRegistry.php:231
+[19-Sep-2016 09:53:27 UTC] PHP   9. Symfony\Component\DependencyInjection\Container->get() /home/ubuntu/workspace/dev2/vendor/symfony/symfony/src/Symfony/Bridge/Doctrine/ManagerRegistry.php:32
+[19-Sep-2016 09:53:27 UTC] PHP  10. appDevDebugProjectContainer->getDoctrine_Orm_DefaultEntityManagerService() /home/ubuntu/workspace/dev2/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php:274
+[19-Sep-2016 09:53:27 UTC] PHP  11. spl_autoload_call() /home/ubuntu/workspace/dev2/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php:669
+[19-Sep-2016 09:53:27 UTC] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/dev2/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php:669
+[19-Sep-2016 09:53:27 UTC] PHP  13. require_once() /home/ubuntu/workspace/dev2/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:142
