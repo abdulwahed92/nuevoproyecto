@@ -1,3 +1,13 @@
-app:
-    resource: "@AppBundle/Controller/"
+app_album:
+    resource: "@AppBundle/Controller/AlbumController.php"
     type:     annotation
+    
+api:
+    type: rest
+    resource: AppBundle\Controller\ApiController
+    defaults: {_format: json }
+    prefix: /api
+    
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc    

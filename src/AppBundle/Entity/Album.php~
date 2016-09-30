@@ -35,9 +35,13 @@ class Album
     private $email;
     
     /**
-     * @ORM\Column(type="string", nullable=true)
+     * @ORM\Column(type="string")
      */
     private $token;
+    
+    public function __construct() {
+        
+    }
 
     /**
      * Get id
@@ -119,29 +123,5 @@ class Album
     public function getDescription()
     {
         return $this->description;
-    }
-
-    /**
-     * Set token
-     *
-     * @param string $token
-     *
-     * @return Album
-     */
-    public function setToken($token)
-    {
-        $this->token = $token;
-
-        return $this;
-    }
-
-    /**
-     * Get token
-     *
-     * @return string
-     */
-    public function getToken()
-    {
-        return $this->token;
     }
 }

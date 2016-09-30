@@ -13,3 +13,13 @@
 [19-Sep-2016 09:53:27 UTC] PHP  11. spl_autoload_call() /home/ubuntu/workspace/dev2/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php:669
 [19-Sep-2016 09:53:27 UTC] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/dev2/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php:669
 [19-Sep-2016 09:53:27 UTC] PHP  13. require_once() /home/ubuntu/workspace/dev2/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php:142
+[26-Sep-2016 09:18:58 UTC] PHP Fatal error:  Cannot redeclare AppKernel::registerBundles() in /home/ubuntu/workspace/dev/app/AppKernel.php on line 51
+[26-Sep-2016 09:18:58 UTC] PHP Stack trace:
+[26-Sep-2016 09:18:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/dev/web/app_dev.php:0
+[26-Sep-2016 09:18:58 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/dev/web/app_dev.php:29
+[26-Sep-2016 09:18:58 UTC] PHP   3. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/dev/web/app_dev.php:29
+[26-Sep-2016 09:19:37 UTC] PHP Fatal error:  Cannot redeclare AppKernel::registerBundles() in /home/ubuntu/workspace/dev/app/AppKernel.php on line 51
+[26-Sep-2016 09:19:37 UTC] PHP Stack trace:
+[26-Sep-2016 09:19:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/dev/web/app_dev.php:0
+[26-Sep-2016 09:19:37 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/dev/web/app_dev.php:29
+[26-Sep-2016 09:19:37 UTC] PHP   3. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/dev/web/app_dev.php:29

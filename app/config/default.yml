@@ -1,0 +1,9 @@
+#  app/config/default.yml
+Api:
+    type: rest  # Required for `RestYamlLoader` to process imported routes
+    prefix: /api
+    resource: "@ApiBundle/Resources/config/routing.yml"
+api.posts:
+    type: rest    # This resource will have RESTful routes
+    resource: My\Bundle\ApiBundle\Controller\PostsController
+    name_prefix: api_   # RestBundle-specific prefixes are allowed now, as the RestBundle is now processing routes
